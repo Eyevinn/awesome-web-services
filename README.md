@@ -48,7 +48,6 @@ their software as a service.
  - [restreamer](#datarhei-restreamer)
  - [Retransfer](#eyevinn-docker-retransfer)
  - [Scene Detect Media Function](#eyevinn-function-scenes)
- - [sftpgo](#drakkan-sftpgo)
  - [Shaka Packager](#eyevinn-shaka-packager-s3)
  - [Simple Image Resizer](#eyevinn-rust-image-processor)
  - [Simple Realtime Server](#ossrs-srs)
@@ -178,9 +177,6 @@ Eyevinn Technology presents retransfer, a Docker container for seamless file tra
 ### Scene Detect Media Function [[SRC](https://github.com/Eyevinn/function-scenes) | [DOCS](https://github.com/Eyevinn/function-scenes)]
 
 A serverless media function to detect scene changes and extract keyframes in a video file or a stream.
-### sftpgo [[SRC](https://github.com/drakkan/sftpgo) ]
-
-Introducing SFTPGo - the versatile solution supporting SFTP, HTTP/S, FTP/S, WebDAV & multiple cloud storages. Secure, scalable & easy to manage.
 ### Shaka Packager [[SRC](https://github.com/Eyevinn/shaka-packager-s3) ]
 
 Shaka-packager-S3 Docker container creates streaming bundle from an ABR bundle on S3 & uploads to another bucket. Join our Slack community for support. Contact sales@eyevinn.se for customization & integration. Eyevinn Technology specializes in video & streaming innovation. Explore more at www.eyevinntechnology.se!
