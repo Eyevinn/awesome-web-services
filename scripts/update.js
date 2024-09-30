@@ -33,11 +33,13 @@ function generateServiceList(sortedList) {
 
 `;
   sortedList.forEach((item) => {
-    list += `- ${item.title}: [[LAUNCH](https://app.osaas.io/dashboard/service/${item.serviceId})|[SRC](${item.repoUrl})`;
+    let docs = '';
     if (item.documentationUrl) {
-      list += `|[DOCS](${item.documentationUrl})`;
-    }
-    list += `] - ${item.description}\n`;
+      docs = `| [DOCS](${item.documentationUrl})`;
+    }    
+    list += `### ${item.title}\n`;
+    list += `- [[SRC](${item.repoUrl}) ${docs}]\n`;
+    list += `${item.description}\n`;
   });
   list += `\n`;
   return list;
