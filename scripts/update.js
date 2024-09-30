@@ -33,9 +33,9 @@ function generateServiceList(sortedList) {
 
 `;
   sortedList.forEach((item) => {
-    list += `[${item.title}](#${item.serviceId})`
-    list += ` - [${item.title}](https://app.osaas.io/dashboard/service/${item.serviceId}) [`;
-    list += `[SRC](${item.repoUrl})`;
+    list += `### [${item.title}](#${item.serviceId})`
+    list += ` - [`;
+    list += `[LAUNCH](https://app.osaas.io/dashboard/service/${item.serviceId})[SRC](${item.repoUrl})`;
     if (item.documentationUrl) {
       list += `|[DOCS](${item.documentationUrl})`;
     }
