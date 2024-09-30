@@ -22,7 +22,7 @@ function generateToc(sortedList) {
 
 `;
   sortedList.forEach((item) => {
-    toc += ` - [${item.title}](https://app.osaas.io/dashboard/service/${item.serviceId})\n`;
+    toc += ` - [${item.title}](#${item.serviceId})\n`;
   });
   toc += `\n`;
   return toc;
@@ -37,7 +37,7 @@ function generateServiceList(sortedList) {
     if (item.documentationUrl) {
       docs = `| [DOCS](${item.documentationUrl})`;
     }    
-    list += `### ${item.title}`;
+    list += `### [${item.title}](#${item.serviceId})`;
     list += ` [[SRC](${item.repoUrl}) ${docs}]\n\n`;
     list += `${item.description}\n`;
   });
