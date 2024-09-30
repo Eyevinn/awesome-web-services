@@ -33,7 +33,7 @@ function generateServiceList(sortedList) {
 
 `;
   sortedList.forEach((item) => {
-    list += `- ${item.title}: [LAUNCH](https://app.osaas.io/dashboard/service/${item.serviceId})|[SRC](${item.repoUrl})`;
+    list += `- ${item.title}: [[LAUNCH](https://app.osaas.io/dashboard/service/${item.serviceId})|[SRC](${item.repoUrl})`;
     if (item.documentationUrl) {
       list += `|[DOCS](${item.documentationUrl})`;
     }
