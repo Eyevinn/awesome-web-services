@@ -22,7 +22,7 @@ function generateToc(sortedList) {
 
 `;
   sortedList.forEach((item) => {
-    toc += ` - [${item.title}](#${item.serviceId})\n`;
+    toc += ` - [${item.title}](https://app.osaas.io/dashboard/service/${item.serviceId})\n`;
   });
   toc += `\n`;
   return toc;
@@ -33,9 +33,7 @@ function generateServiceList(sortedList) {
 
 `;
   sortedList.forEach((item) => {
-    list += `### [${item.title}](#${item.serviceId})\n`;
-    list += ` - [`;
-    list += `[LAUNCH](https://app.osaas.io/dashboard/service/${item.serviceId})[SRC](${item.repoUrl})`;
+    list += `${item.title}: [LAUNCH](https://app.osaas.io/dashboard/service/${item.serviceId})|[SRC](${item.repoUrl})`;
     if (item.documentationUrl) {
       list += `|[DOCS](${item.documentationUrl})`;
     }
