@@ -34,7 +34,7 @@ function generateServiceList(sortedList) {
 `;
   sortedList.forEach((item) => {
     list += ` - [${item.title}](https://app.osaas.io/dashboard/service/${item.serviceId}) [`;
-    list += `[SRC](${item.repoUrl})`;
+    list += `[[SELF](#${item.serviceId})[SRC](${item.repoUrl})`;
     if (item.documentationUrl) {
       list += `|[DOCS](${item.documentationUrl})`;
     }
