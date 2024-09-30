@@ -37,7 +37,7 @@ function generateServiceList(sortedList) {
     if (item.documentationUrl) {
       docs = `| [DOCS](${item.documentationUrl})`;
     }    
-    list += `### [${item.title}](#${item.serviceId})`;
+    list += `### ${item.title}`;
     list += ` [[SRC](${item.repoUrl}) ${docs}]\n\n`;
     list += `${item.description}\n`;
   });
